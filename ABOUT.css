@@ -39,8 +39,8 @@ body{
 
 }
 .aks img{
-    height: 500px;
-    width: 500px;
+    max-width: 100%;
+    height: auto;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 20px 30px 10px  rgba(0,0,0,0.2);
@@ -119,7 +119,7 @@ footer a:hover{
 
     .top_nave a {
         margin: 8px 0;
-        padding: 0;
+        padding-left: 0;
     }
 
     div p {
