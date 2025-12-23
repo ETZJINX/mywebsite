@@ -1,0 +1,168 @@
+:root{
+    --main-color :azure;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:var(--main-color);
+    overflow:auto ;
+}
+
+.top_nave{
+    display:flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+}
+
+
+
+
+.top_nave a{
+    color: aquamarine;
+    text-decoration: none;
+    margin-right: 8%;
+    padding-left: 60px;
+    
+}
+.top_nave a:hover{
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: -20px;
+    font-style: italic;
+    list-style-type: square;
+    
+}
+.skill li{
+    color: rgb(1, 82, 18);
+    font-size: 20px;
+    font-weight: 900;
+}
+.skill :hover{
+    color:hotpink;
+    text-decoration: overline;
+}
+.skill :active{
+    color:yellow;
+}
+
+
+
+.skillls{
+    direction: rtl;
+    text-align: right;
+    margin-bottom: 90px;
+}
+.skillls dt{
+    font-size: 26px;
+    font-weight:600;
+    color: black;
+    margin-bottom: 10px;
+}
+.skillls dd{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 30px;
+    
+}
+.skillls dd::selection{
+    background-color: yellow;
+    color: blue;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: cornsilk;
+}
+footer p{
+    direction: rtl;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+footer a{
+    color:black;
+    padding-left: 750px;
+}
+footer a:hover{
+    color: hotpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .top_nave {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .top_nave a {
+        margin-right: 0;
+        padding-left: 0;
+        padding: 10px 0;
+    }
+    .skill li {
+        font-size: 16px; 
+    }
+    .skillls dt {
+        font-size: 20px;
+    }
+    .skillls dd {
+        font-size: 16px;
+    }
+    footer a {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .top_nave {
+        flex-direction: column; 
+        flex-wrap: wrap;    
+        justify-content: center;
+        align-content: center;
+    }
+    .top_nave a {
+        margin-right: 4%;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .skill li {
+        font-size: 18px;
+    }
+    .skillls dt {
+        font-size: 22px;
+    }
+    .skillls dd {
+        font-size: 18px;
+    }
+}

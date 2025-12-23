@@ -1,0 +1,140 @@
+:root{
+    --main-color :azure;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:var(--main-color);
+    overflow-y:auto ;
+    overflow-x: hidden;
+}
+
+.top_nave{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+}
+
+
+
+
+.top_nave a{
+    color: aquamarine;
+    text-decoration: none;
+    margin-right: 8%;
+    padding-left: 60px;
+}
+.top_nave a:hover{
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+
+.aks{
+    text-align: center;
+    padding: 10px 0;
+
+}
+.aks img{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 20px 30px 10px  rgba(0,0,0,0.2);
+
+
+
+}
+.aks figcaption{
+    font-style: italic;
+    margin-bottom: 12px;
+
+
+}
+div p{
+    font-style: italic;
+    font-size: 20px;
+    text-align: right;
+    font-weight:600;
+    line-height: 35px;
+    letter-spacing: normal;
+}
+div{
+    margin-bottom: 90px;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+footer p{
+    direction: rtl;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+footer a{
+    color:black;
+    padding-left: 750px;
+}
+footer a:hover{
+    color: hotpink;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .top_nave {
+        justify-content: center;
+    }
+
+    div p {
+        font-size: 18px;
+        margin: 20px 5%;
+    }
+
+    .aks figcaption {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top_nave {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top_nave a {
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    div p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    div p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .aks figcaption {
+        font-size: 14px;
+    }
+}
