@@ -104,8 +104,8 @@ border: 4px solid darksalmon ;
     text-decoration: underline;
 }
 footer{
-    position: fixed;
-    bottom: 10px;
+    position:fixed;
+    bottom: 0%;
     width: 100%;
     background-color: cornsilk;
     
@@ -177,7 +177,7 @@ footer a:hover{
 
 
 /*تبلت*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .foot_nav{
         flex-wrap: wrap;
         justify-content: center;
