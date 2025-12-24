@@ -135,7 +135,9 @@ footer a:hover{
 @media (max-width: 480px) {
     .foot_nav{
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
         padding-left: 10px;
     }
     .foot_nav a{
@@ -156,7 +158,7 @@ footer a:hover{
         font-size: 14px;
         margin-top: 10px;
         padding: 10px;
-        width: 95%;
+        width: 85%;
     }
 
     footer{
